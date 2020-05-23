@@ -1,0 +1,8 @@
+rootProject.name='CleanArchitecture'
+include ':app'
+include ':remote'
+include ':data'
+include ':domain'
+include ':presentation'
+include ':base'
+include ':local'
