@@ -3,6 +3,7 @@ package com.brandjunhoe.local.di
 import android.content.Context
 import com.brandjunhoe.data.source.repos.ReposLocalDataSource
 import com.brandjunhoe.local.AppDB
+import com.brandjunhoe.local.dao.ReposDao
 import com.brandjunhoe.local.mapper.ReposEntityMapper
 import com.brandjunhoe.local.source.ReposLocalDataSourceImpl
 import dagger.Module
@@ -16,9 +17,9 @@ class LocalDataSourceModule {
     @Named("ReposLocalDataSourceImpl")
     fun provideLocalDataSource(
         entityMapper: ReposEntityMapper,
-        context: Context
+        reposDao: ReposDao
     ): ReposLocalDataSource {
-        return ReposLocalDataSourceImpl(AppDB.getInstance(context).getRepos(), entityMapper)
+        return ReposLocalDataSourceImpl(reposDao, entityMapper)
     }
 
 }

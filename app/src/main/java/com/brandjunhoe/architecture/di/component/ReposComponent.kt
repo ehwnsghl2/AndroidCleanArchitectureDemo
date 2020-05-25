@@ -4,6 +4,7 @@ import android.content.Context
 import com.brandjunhoe.architecture.ReposApplication
 import com.brandjunhoe.data.di.RepositoryModule
 import com.brandjunhoe.domain.di.UseCaseModule
+import com.brandjunhoe.local.di.DatabaseModule
 import com.brandjunhoe.local.di.LocalDataSourceModule
 import com.brandjunhoe.presentation.di.module.ActivityBindingModule
 import com.brandjunhoe.remote.di.RemoteDataSourceModule
@@ -23,7 +24,8 @@ import javax.inject.Singleton
         LocalDataSourceModule::class,
         RepositoryModule::class,
         UseCaseModule::class,
-        NetworkModule::class]
+        NetworkModule::class,
+        DatabaseModule::class]
 )
 interface ReposComponent : AndroidInjector<ReposApplication> {
 
