@@ -15,11 +15,11 @@ class RepositoryModule {
     @Provides
     @Named("ReposRepositoryImpl")
     fun provideReposRepository(
-//        @Named("ReposLocalDataSourceImpl") localDataSource: ReposLocalDataSource,
+        @Named("ReposLocalDataSourceImpl") localDataSource: ReposLocalDataSource,
         @Named("ReposRemoteDataSourceImpl") remoteDataSource: ReposRemoteDataSource,
         reposMapper: ReposMapper
     ): ReposRepository {
-        return ReposRepositoryImpl(/*localDataSource, */remoteDataSource, reposMapper)
+        return ReposRepositoryImpl(localDataSource, remoteDataSource, reposMapper)
     }
 
 }

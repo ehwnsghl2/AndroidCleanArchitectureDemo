@@ -8,6 +8,5 @@ import io.reactivex.Single
 interface ReposLocalDataSource : BaseDataSource {
 
     fun insertRepos(repos: List<ReposEntity>) : Completable
-    fun getRepos(username: String) : Single<List<ReposEntity>>
 
 }

@@ -11,11 +11,11 @@ import dagger.Provides
 import javax.inject.Named
 
 @Module
-class DataSourceModule {
+class RemoteDataSourceModule {
 
     @Provides
     @Named("ReposRemoteDataSourceImpl")
-    fun provideDataSurce(
+    fun provideRemoteDataSource(
         reposService: ReposService,
         entityMapper: ReposEntityMapper
     ): ReposRemoteDataSource {

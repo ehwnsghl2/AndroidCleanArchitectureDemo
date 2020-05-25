@@ -4,8 +4,9 @@ import android.content.Context
 import com.brandjunhoe.architecture.ReposApplication
 import com.brandjunhoe.data.di.RepositoryModule
 import com.brandjunhoe.domain.di.UseCaseModule
+import com.brandjunhoe.local.di.LocalDataSourceModule
 import com.brandjunhoe.presentation.di.module.ActivityBindingModule
-import com.brandjunhoe.remote.di.DataSourceModule
+import com.brandjunhoe.remote.di.RemoteDataSourceModule
 import com.brandjunhoe.remote.di.NetworkModule
 import dagger.BindsInstance
 import dagger.Component
@@ -18,7 +19,8 @@ import javax.inject.Singleton
     modules = [
         AndroidSupportInjectionModule::class,
         ActivityBindingModule::class,
-        DataSourceModule::class,
+        RemoteDataSourceModule::class,
+        LocalDataSourceModule::class,
         RepositoryModule::class,
         UseCaseModule::class,
         NetworkModule::class]

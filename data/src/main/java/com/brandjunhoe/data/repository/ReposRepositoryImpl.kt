@@ -12,7 +12,7 @@ import io.reactivex.Single
 import javax.inject.Inject
 
 open class ReposRepositoryImpl @Inject constructor(
-   /* private val localDataSource: ReposLocalDataSource,*/
+    private val localDataSource: ReposLocalDataSource,
     private val remoteDataSource: ReposRemoteDataSource,
     private val mapper: ReposMapper
 ) :
@@ -22,8 +22,8 @@ open class ReposRepositoryImpl @Inject constructor(
         return remoteDataSource.getRepos(username).networkThreadWithMainThread().map(mapper::mapFromEntity)
     }
 
-    /*override fun insert(repos: List<Repos>): Completable {
+    override fun insert(repos: List<Repos>): Completable {
         return localDataSource.insertRepos(mapper.mapToEntity(repos)).networkThreadWithMainThread()
-    }*/
+    }
 
 }

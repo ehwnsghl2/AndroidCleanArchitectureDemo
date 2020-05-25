@@ -6,5 +6,5 @@ import io.reactivex.Single
 
 interface ReposRepository {
     fun getRepos(username: String): Single<List<Repos>>
-    //fun insert(repos: List<Repos>): Completable
+    fun insert(repos: List<Repos>): Completable
 }

@@ -38,6 +38,8 @@ object Versions {
     val lifecycle = "2.1.0-alpha04"
     val recyclerview = "1.0.0"
     val glide = "4.9.0"
+    val room = "2.2.3"
+    val paging = "2.1.1"
 
 }
 
@@ -62,6 +64,15 @@ object Libraries {
     // GLIDE
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     val glideCompiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
+
+    // ROOM
+    val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
+    val roomKapt = "androidx.room:room-compiler:${Versions.room}"
+    val roomKtx = "androidx.room:room-ktx:${Versions.room}"
+    val roomGuava = "androidx.room:room-guava:${Versions.room}"
+    val roomTest = "androidx.room:room-testing:${Versions.room}"
+
+
 }
 
 object KotlinLibraries {
@@ -77,4 +88,6 @@ object AndroidLibraries {
     val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
     val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerview}"
+    val pagingRuntime = "androidx.paging:paging-runtime:${Versions.paging}"
+
 }

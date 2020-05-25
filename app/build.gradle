@@ -18,6 +18,7 @@ dependencies {
     implementation project(Modules.data)
     implementation project(Modules.base)
     implementation project(Modules.remote)
+    implementation project(Modules.local)
 
     implementation Libraries.dagger
     implementation Libraries.daggerAndroid
