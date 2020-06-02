@@ -1,8 +1,7 @@
 package com.brandjunhoe.local.di
 
-import android.content.Context
 import com.brandjunhoe.data.source.repos.ReposLocalDataSource
-import com.brandjunhoe.local.AppDB
+import com.brandjunhoe.local.AppDatabase
 import com.brandjunhoe.local.dao.ReposDao
 import com.brandjunhoe.local.mapper.ReposEntityMapper
 import com.brandjunhoe.local.source.ReposLocalDataSourceImpl
@@ -17,9 +16,9 @@ class LocalDataSourceModule {
     @Named("ReposLocalDataSourceImpl")
     fun provideLocalDataSource(
         entityMapper: ReposEntityMapper,
-        reposDao: ReposDao
+        appDatabase: AppDatabase
     ): ReposLocalDataSource {
-        return ReposLocalDataSourceImpl(reposDao, entityMapper)
+        return ReposLocalDataSourceImpl(appDatabase, entityMapper)
     }
 
 }

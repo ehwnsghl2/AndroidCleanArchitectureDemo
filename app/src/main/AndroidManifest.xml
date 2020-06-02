@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
-        <activity android:name="com.brandjunhoe.presentation.ui.repos.ReposActivity">
+        <activity android:name=".ui.repos.ReposActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

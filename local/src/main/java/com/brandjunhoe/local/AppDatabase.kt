@@ -11,7 +11,7 @@ import com.brandjunhoe.local.model.ReposEntity
     version = 1,
     exportSchema = false
 )
-abstract class AppDB:RoomDatabase(){
+abstract class AppDatabase:RoomDatabase(){
 
     abstract fun getRepos() :ReposDao
 

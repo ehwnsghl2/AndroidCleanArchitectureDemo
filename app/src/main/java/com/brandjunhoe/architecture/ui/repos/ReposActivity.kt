@@ -1,11 +1,12 @@
-package com.brandjunhoe.presentation.ui.repos
+package com.brandjunhoe.architecture.ui.repos
 
+import com.brandjunhoe.architecture.R
 import android.os.Bundle
+import com.brandjunhoe.architecture.databinding.ActivityReposBinding
 import com.brandjunhoe.base.BaseActivity
 import com.brandjunhoe.base.ext.createViewModel
-import com.brandjunhoe.presentation.R
-import com.brandjunhoe.presentation.BR
-import com.brandjunhoe.presentation.databinding.ActivityReposBinding
+import com.brandjunhoe.architecture.BR
+import com.brandjunhoe.presentation.repos.ReposViewModel
 
 
 class ReposActivity : BaseActivity<ActivityReposBinding, ReposViewModel>() {

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="item"
-            type="com.brandjunhoe.domain.model.Repos"/>
+            type="com.brandjunhoe.presentation.model.ReposView"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

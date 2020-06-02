@@ -1,4 +1,4 @@
-package com.brandjunhoe.presentation
+package com.brandjunhoe.architecture.common
 
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes

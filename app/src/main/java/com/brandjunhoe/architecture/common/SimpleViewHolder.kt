@@ -1,4 +1,4 @@
-package com.brandjunhoe.presentation
+package com.brandjunhoe.architecture.common
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,6 +8,8 @@ import androidx.annotation.NonNull
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
+import com.brandjunhoe.architecture.BuildConfig
+import com.brandjunhoe.architecture.BR
 
 
 open class SimpleViewHolder(

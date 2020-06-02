@@ -1,6 +1,7 @@
-package com.brandjunhoe.presentation.di.module
+package com.brandjunhoe.architecture.di.module
 
-import com.brandjunhoe.presentation.ui.repos.ReposActivity
+import com.brandjunhoe.architecture.ui.repos.ReposActivity
+import com.brandjunhoe.presentation.di.module.ViewModelModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

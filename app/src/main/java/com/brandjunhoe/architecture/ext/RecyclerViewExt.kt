@@ -1,11 +1,11 @@
-package com.brandjunhoe.presentation.ui
+package com.brandjunhoe.architecture.ext
 
 import androidx.annotation.LayoutRes
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.brandjunhoe.presentation.SimpleRvAdapter
+import com.brandjunhoe.architecture.common.SimpleRvAdapter
 
 /**
  * 리사이클러뷰 데이터 주입

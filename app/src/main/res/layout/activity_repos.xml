@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.brandjunhoe.presentation.ui.repos.ReposViewModel" />
+            type="com.brandjunhoe.presentation.repos.ReposViewModel" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,7 +15,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.repos.ReposActivity">
+    tools:context="com.brandjunhoe.architecture.ui.repos.ReposActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

@@ -15,7 +15,7 @@ dependencies {
     kapt Libraries.daggerProcessor
 
 
-    implementation Libraries.roomRuntime
+    api Libraries.roomRuntime
     kapt Libraries.roomKapt
     implementation Libraries.roomKtx
     implementation Libraries.roomGuava
