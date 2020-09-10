@@ -10,4 +10,3 @@ In fact, the Architecture Components of its Data Binding Library are modeled on 
 
 The data used the github repos API as a sample.
 
-
